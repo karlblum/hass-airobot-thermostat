@@ -1,6 +1,5 @@
 {
     "name": "Airobot Thermostat",
-    "content_in_root": true,
     "domain": "airobot_thermostat",
     "country": "Global",
     "homeassistant": "2023.1.0", 

@@ -1,0 +1,11 @@
+{
+    "domain": "airobot_thermostat",
+    "name": "Airobot Thermostat",
+    "version": "1.0",
+    "documentation": "https://github.com/karlblum/hass-airobot-thermostat",
+    "requirements": [],
+    "dependencies": [],
+    "codeowners": ["@karlblum"],
+    "iot_class": "local_polling",
+    "config_flow": true
+  }

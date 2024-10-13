@@ -21,7 +21,7 @@ class AirobotDataUpdateCoordinator(DataUpdateCoordinator):
             hass,
             _LOGGER,
             name=f"Airobot Thermostat {self._room}",
-            update_interval=timedelta(seconds=5),
+            update_interval=timedelta(seconds=15),
         )
 
     def _get_headers(self):

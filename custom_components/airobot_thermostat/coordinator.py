@@ -67,8 +67,14 @@ class AirobotDataUpdateCoordinator(DataUpdateCoordinator):
             if co2_value == 65535:
                 co2_value = None  # Set to None to indicate no valid CO2 reading
 
+            floor_temperature = status_data.get("TEMP_FLOOR", 0)
+            floor_temperature_available = 0 < floor_temperature < 32767
+
+
             return {
                 "temperature": status_data.get("TEMP_AIR", 0) / 10,
+                "floor_temperature": status_data.get("TEMP_FLOOR", 0) / 10,
+                "floor_temperature_available": floor_temperature_available,
                 "humidity": status_data.get("HUM_AIR", 0) / 10,
                 "co2": co2_value,
                 "aqi": status_data.get("AQI", 0),

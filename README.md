@@ -13,6 +13,7 @@ This custom integration allows you to integrate **Airobot thermostats** with Hom
 ## Requirements
 
 - Airobot thermostat that supports the API.
+- Static IP address must be assigned to each thermostat.
 - Home Assistant 2023.1 or later.
 
 ## Installation Instructions (via HACS)

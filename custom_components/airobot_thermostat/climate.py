@@ -39,6 +39,9 @@ class AirobotThermostat(CoordinatorEntity, ClimateEntity):
 
     @property
     def current_temperature(self):
+        if self.coordinator.data.get("floor_temperature_available"):
+            return self.coordinator.data["floor_temperature"]
+
         return self.coordinator.data["temperature"]
 
     @property

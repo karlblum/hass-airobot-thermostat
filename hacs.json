@@ -1,11 +1,11 @@
 {
-    "name": "Airobot Thermostat",
     "domain": "airobot_thermostat",
+    "name": "Airobot Thermostat",
     "country": "Global",
+    "documentation": "https://github.com/karlblum/hass-airobot-thermostat",
     "homeassistant": "2023.1.0", 
-    "render_readme": true,
-    "zip_release": false,
     "release_notes": "https://github.com/karlblum/hass-airobot-thermostat/releases",
+    "render_readme": true,
     "tags": ["Thermostat", "Climate"],
-    "documentation": "https://github.com/karlblum/hass-airobot-thermostat"
+    "zip_release": false  
   }

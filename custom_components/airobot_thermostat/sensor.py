@@ -30,6 +30,7 @@ class AirobotTemperatureSensor(CoordinatorEntity, SensorEntity):
         self._attr_unique_id = f"{DOMAIN}_{coordinator._username}_{coordinator._room}_temp"
         self._attr_native_unit_of_measurement = UnitOfTemperature.CELSIUS
         self._attr_device_class = "temperature"
+        self._attr_state_class = "measurement"
 
     @property
     def state(self):
@@ -44,6 +45,7 @@ class AirobotHumiditySensor(CoordinatorEntity, SensorEntity):
         self._attr_unique_id = f"{DOMAIN}_{coordinator._username}_{coordinator._room}_humidity"
         self._attr_native_unit_of_measurement = "%"
         self._attr_device_class = "humidity"
+        self._attr_state_class = "measurement"
 
     @property
     def state(self):
@@ -58,6 +60,7 @@ class AirobotCO2Sensor(CoordinatorEntity, SensorEntity):
         self._attr_unique_id = f"{DOMAIN}_{coordinator._username}_{coordinator._room}_co2"
         self._attr_native_unit_of_measurement = "ppm"
         self._attr_device_class = "carbon_dioxide"
+        self._attr_state_class = "measurement"
 
     @property
     def state(self):
@@ -91,6 +94,7 @@ class AirobotFloorTemperatureSensor(CoordinatorEntity, SensorEntity):
         self._attr_unique_id = f"{DOMAIN}_{coordinator._username}_{coordinator._room}_floor_temp"
         self._attr_native_unit_of_measurement = UnitOfTemperature.CELSIUS
         self._attr_device_class = "temperature"
+        self._attr_state_class = "measurement"
 
     @property
     def state(self):

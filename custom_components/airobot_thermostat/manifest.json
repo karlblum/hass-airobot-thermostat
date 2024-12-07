@@ -6,8 +6,8 @@
     "dependencies": [],
     "documentation": "https://github.com/karlblum/hass-airobot-thermostat",
     "integration_type": "device",
-    "issue_tracker": "https://github.com/karlblum/hass-airobot-thermostat/issues",
     "iot_class": "local_polling",
+    "issue_tracker": "https://github.com/karlblum/hass-airobot-thermostat/issues",
     "requirements": [],
     "version": "1.0"
   }

@@ -29,6 +29,10 @@ class AirobotThermostat(CoordinatorEntity, ClimateEntity):
         self._attr_preset_mode = None
 
     @property
+    def device_info(self):
+        return self.coordinator.device_info
+
+    @property
     def preset_mode(self):
         mode = self.coordinator.data.get("preset_mode", 1)  # Default to Home
         if mode == 1:

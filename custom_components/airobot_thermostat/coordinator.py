@@ -24,6 +24,15 @@ class AirobotDataUpdateCoordinator(DataUpdateCoordinator):
             update_interval=timedelta(seconds=15),
         )
 
+    @property
+    def device_info(self):
+        return {
+            "identifiers": {(DOMAIN, self._username)},
+            "name": f"Airobot {self._room} Thermostat",
+            "manufacturer": "Airobot",
+            "model": "Thermostat",
+        }
+
     def _get_headers(self):
         """Return the headers for REST API with proper Basic Authentication."""
         credentials = f"{self._username}:{self._password}"
